@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Psyche Du Film</title>
+    <head>
+        <title>Psyche Du Film</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS\HomeIV.css">
+    </head>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Victor Mono', monospace;
+            font-size: 14px; /* Adjust the font size as desired */
+        }
+
+        input, textarea {
+            font-family: 'Victor Mono', monospace;
+            font-size: 14px; /* Adjust the font size as desired */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo-container">
+            <img src="Labels\dflogoiii.png" alt="Logo" id="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                
+                
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main">
+        <section id="experimental-film">
+            <a href="https://www.youtube.com/channel/UCM3wrTt5LDRGd398wlgpCHQ" class="image-link" target="_blank">
+                <img class="section-header" src="Labels/Efilmii.png" alt="Experimental Film">
+            </a>
+            <!-- Embed a YouTube video -->
+            <iframe width="700" height="0" src="https://www.youtube.com/embed/-kBydySFMS8?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+    <section id="illustration">
+            <img class="section-header" src="Labels/multimedia art.png" alt="Multi-Media Art">
+            <img id="toggleImage" src="ART\\fire.png" alt="Illustration" title="Click to see the next image">
+        </section>
+
+        <section id="purchase">
+            <div id="purchase-content">
+                <img class="section-header" src="Labels/purchase arti.png" alt="Purchase Art">
+                <div id="content-background">
+                    <p>If you are interested in owning a piece of my multimedia art, there are several options available:</p>
+                    <ul>
+                        <li>
+                            <a id="print-link" href="https://www.inprnt.com/gallery/psydufilm/" target="_blank">Click here</a> to purchase prints, stickers, etc.
+                        </li>
+                        <li>
+                            Link to buy tapestries coming soon...
+                        </li>
+                    </ul>
+                </div>
+                <img class="section-header" src="Labels/socials music.png" alt="Links to socials/music">
+                <ul>
+                    <li>
+                        <a id="instagram-link" href="https://www.instagram.com/psychedufilm/" target="_blank">
+                            <img class="social-icon" src="Labels\IGicon.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="soundcloud-link" href="https://soundcloud.com/user-810427866" target="_blank">
+                            <img class="social-icon" src="Labels\Soundcloud-logo.png" alt="Soundcloud">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="tiktok-link" href="https://www.tiktok.com/@du_film" target="_blank">
+                            <img class="social-icon" src="Labels\tiktok1.png" alt="Tiktok">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="spotify-link" href="https://open.spotify.com/artist/5UEQHgFxkHcy1iyY6Ay579" target="_blank">
+                            <img class="social-icon" src="Labels\Spotify_icon.svg.png" alt="Spotify">
+                        </a>
+                    </li>
+                </ul>
+                
+                
+                
+                
+            </div>
+        </section>
+
+        
+        
+    
+        
+    </div>
+    <script>
+        let images = [];
+        for (let i = 1; i <= 18; i++) {
+            images.push("ART/33/image" + i + ".jpg");
+        }
+        let currentImageIndex = 0;
+        const imageElement = document.getElementById('toggleImage');
+    
+        function changeImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            imageElement.src = images[currentImageIndex];
+        }
+    
+        // Set the initial image
+        imageElement.src = images[currentImageIndex];
+    
+        // Change image on click
+        imageElement.addEventListener('click', function() {
+            changeImage();
+        });
+    
+        // Change image every second
+        setInterval(changeImage, 1500);
+    </script>
+    
+    
+    
+    
+    <section id="about">
+        <div id="about-image-container">
+            <img id="about-image" src="ART\\Derrick1.jpg" alt="About me">
+        </div>
+        <div id="about-text">
+            <img class="section-header centered" src="Labels/about me.png" alt="about me">
+            <p>
+                I am an artist at the crossroads of technology and tradition, a conduit between the digital and physical realms. My craft revolves around remixing film, a process that mirrors how DJs seamlessly blend songs to create an entirely new auditory experience.
+            </p>
+            <p>
+                The passion for this art form was not born overnight but has been honed and nurtured through a decade of intense dedication and freakish study of experimental art. Every clip, every frame, every shot I dissect and stitch back together is part of a grander narrative that I weave, a visual symphony that I compose.
+            </p>
+            <p>
+                Just like the DJs I admire, I know how to sample and spin. My inspirations come from the golden age of Hip Hop – artists like Dilla, Madlib, and Pete Rock have left an indelible mark on me. Their innovative use of loops, beats, and rhythm has taught me to perceive and appreciate films from a different perspective.
+            </p>
+            <p>
+                But my creative exploration doesn't stop there. While I remix films in the style of a DJ, I also remix music, bringing a filmmaker's eye to the auditory art form. It's a process of transformation, of breathing new life into sounds and harmonies. It's an entirely different canvas, but the process is familiar – I edit, I splice, I arrange and rearrange, until the result is an audioscape that tells its own story, that evokes its own emotion. I like to think of it as reverse engineering the traditional approach to creating art - in the same way filmmakers weave scenes together to tell a cohesive story, I sew together notes and rhythms to create a harmonious musical piece.
+            </p>
+            <p>
+                My process is a dance between two distinct but closely related art forms. The result is a mash-up of visuals and sounds that pushes the boundaries of both, creating a truly unique sensory experience.
+            </p>
+            <p>
+                Through my work, I aim to inspire others to see the world in a new light, to appreciate the beauty that can be found in the unexpected. The world is a never-ending source of inspiration and I'm always looking forward to my next project, my next remix, my next opportunity to stir the senses. So, sit back, relax, and listen. Let me take you on an unforgettable journey.
+            </p>
+            
+        </div>
+        
+    </section>
+
+    <!-- Current Projects and Newsletter Section -->
+  
+    <div id="contact-form">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXVzeGW8dWooHUs0sFKCMFbBc46Jd0fM0ZrMlgOp1aVIn1sQ/viewform?usp=sf_link" target="_blank">
+            <img id="contact-image" src="Labels/contact me.png" alt="Contact">
+        </a>
+    </div>
+    
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Dufilm 2023</p>
+    </footer>
+</body>
+</html>

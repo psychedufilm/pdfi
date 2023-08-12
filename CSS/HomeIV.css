@@ -1,0 +1,284 @@
+/* Resetting some basic elements */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the main section */
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+
+/* Switch to vertical layout for smaller screens */
+@media (max-width: 800px) { /* Adjust this pixel value to the point where you want the layout to change */
+    .main {
+        flex-direction: column;
+    }
+    
+    .main section {
+        margin-bottom: 15px; /* Add some space between the sections */
+    }
+}
+/* Styling each section in main */
+.main section {
+    flex: 1;
+    text-align: center; /* Center align the content */
+    margin: 0 5px; /* This adds a 15px margin to the left and right of each section */
+    height: 500px;
+}
+
+/* Styling iframe and img to fit the sections */
+.main section iframe,
+.main section img {
+    max-width: 450px;
+    height: 450px;
+}
+
+#music {
+    flex: 2; 
+}
+/* Styling the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Styling the nav and ul */
+.header nav, 
+.header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Styling the nav-links */
+.header .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header .nav-links a {
+    color: #000; /* Adjust to suit your preference */
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+/* Styling the logo */
+#logo {
+    width: 175px; /* or any size you want */
+    height: auto; /* maintain aspect ratio */
+}
+/* Styling the projects-newsletter, shop-widget and footer sections */
+.projects-newsletter, .shop-widget, footer {
+    text-align: center;
+}
+
+
+#toggleImage {
+    width: 450px;
+    height: 450px;
+}
+
+#toggleButton {
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+#toggleButton:hover {
+    background-color: #bbb;
+}
+#about {
+    display: flex;
+    align-items: center; /* Changed from center to flex-start */
+    justify-content: flex-end;
+    width: 100%;
+    margin: 20px 0;
+}
+#about-image-container {
+    width: 66%;
+    align-items: center;
+}
+#about-image {
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+}
+#about-text {
+    width: 33%;
+    padding-left: 20px;
+}
+#about-area {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 800px) { /* Adjust the breakpoint as needed */
+    #about {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #about-image-container,
+    #about-text {
+        width: 100%;
+    }
+
+    #about-text {
+        padding-left: 0;
+        text-align: center; /* if you want the text centered */
+    }
+}
+
+
+#content-background {
+    position: relative;
+    z-index: 2;
+    background: url("CSS/loe.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 30%;
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contact-form h2 {
+    margin-bottom: 30px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5C8AE6;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form button:hover {
+    background-color: #2E68C8;
+}
+
+#purchase-content ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px; /* Adjust as needed */
+    padding-bottom: 30px; /* Set the space you want below the images */
+
+}
+
+#purchase-content ul li {
+    flex: 1 0 50%; /* This will allow for two items per row */
+    width: 50%;
+}
+
+#instagram-link img {
+    width: 50%;
+    height: auto; /* Preserve aspect ratio */
+    object-fit: contain;
+    padding: 10px;
+}
+#soundcloud-link img {
+    width: 50%;
+    height: auto; /* Preserve aspect ratio */
+    object-fit: contain;
+    padding: 10px;
+
+}
+#tiktok-link img {
+    width: 40%;
+    height: auto; /* Preserve aspect ratio */
+    object-fit: contain;
+    padding: 10px;
+
+}
+ 
+#spotify-link img {
+    width: 45%;
+    height: auto; /* Preserve aspect ratio */
+    object-fit: contain;
+    padding: 10px;
+
+}
+
+
+.section-header {
+    width: 45%; /* Or any other percentage or pixel value you want */
+    height: auto; /* Keep aspect ratio */
+    max-height: 30px; /* Limit height to not take up too much space */
+    padding-bottom: 20px; /* Set the space you want below the images */
+    align-items: center;
+}
+
+/* #contact-image {
+    padding-bottom: 15px;
+    width: 45%;
+} */
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Optional: Add spacing between the image and the form */
+}
+
+form {
+    max-width: 300px; /* Optional: Set the maximum width of the form */
+    width: 100%;
+}
+
+input, textarea, button {
+    margin-bottom: 10px; /* Optional: Add spacing between form elements */
+}.centered {
+    display: block;
+    margin: 0 auto;
+}
+
